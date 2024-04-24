@@ -1,20 +1,21 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { Layout, Compass, BarChart, List, Trophy  } from "lucide-react";
+import { Layout, Compass, BarChart, List, Trophy } from "lucide-react";
 import { SidebarItem } from "./sidebar-item";
 
 // when you click on the exit button, you will be redirected to the home page
 const guestRoutes = [
   {
-    icon: Layout,
-    label: "Dashboard",
+    icon: Compass,
+    label: "Browse",
     href: "/",
   },
   {
-    icon: Compass,
-    label: "Browse",
-    href: "/search",
+    icon: Layout,
+    label: "Dashboard",
+    href: "/dashboard",
   },
+
   {
     icon: Trophy,
     label: "Leaderboard",
